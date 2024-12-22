@@ -13,7 +13,7 @@ def plot_pie(df, column, limit=None):
     fig = px.pie(a, values='count', names=column, title=f'Distribution of {column}s', width=800, height=500)
     fig.show()
 
-def plot_hist(df, column, color=['cornflowerblue']):
+def plot_hist(df, column, color=['dodgerblue']):
     fig = px.histogram(
             df,
             x=column,
